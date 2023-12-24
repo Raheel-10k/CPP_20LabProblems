@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 int sumOfDigits(int num) {
     if (num < 10) {
         return num;
@@ -9,12 +9,10 @@ int sumOfDigits(int num) {
 
 int main() {
     int number;
-    std::cout << "Enter a number: ";
-    std::cin >> number;
+    cout << "Enter a number: ";
+    cin >> number;
     int result = sumOfDigits(number);
-
-    // Display the result
-    std::cout << "Sum of digits until it becomes a single-digit number: " << result << std::endl;
+    cout << "Sum of digits until it becomes a single-digit number: " << result << endl;
 
     return 0;
 }
